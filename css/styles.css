@@ -12,8 +12,14 @@ body {
 }
 /* STYLES GLOBAL */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .container {
   width: 1600px;
+  padding: 0 15px;
   margin: auto;
   background-color: var(--brand-color-white);
 }
@@ -24,10 +30,11 @@ body {
   text-decoration: none;
 }
 .box-bg {
-  box-sizing: border-box;
+  align-items: center;
   display: flex;
   height: 80px;
   padding-left: 215px;
+  /* padding-right: 227px; */
   border-bottom: 1px solid #ececec;
 }
 /* END STYLES GLOBAL */
@@ -41,8 +48,8 @@ body {
   list-style-type: none;
 }
 .logo-header {
-  margin-top: 24px;
-  
+  display: flex;
+  align-items: center;
   color: var(--brand-color-blue);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -53,15 +60,17 @@ body {
   text-decoration: none;
   border: none;
 }
-.menu-list{
-  margin-top: 32px;
-  margin-left: 47px;
-  box-sizing: border-box;
+.menu{
+display: flex;
+ flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list {
   display: flex;
+  margin-left: 93px;
 }
 .menu-item {
-  display: flex;
-  padding-left: 46px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -69,12 +78,20 @@ body {
   text-decoration: none;
   color: var(--brand-color-black);
 }
+.menu-item:nth-last-child(-n + 3){
+  margin-left: 46px;
+}
 .menu-item:hover {
   color: var(--brand-color-blue);
 }
+.contact-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 371px;
+  padding-right: 227px;
+}
 .mail {
-  margin-top: 32px;
-  margin-left: 371px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -86,7 +103,6 @@ body {
   color: var(--brand-color-blue);
 }
 .tel {
-  margin-top: 32px;
   margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -100,9 +116,12 @@ body {
 }
 /* Sekcja przycisk */
 .bg {
+  height: 600px;
   background: var(--brand-background-black);
 }
 .text-bg {
+  margin: 0 452px;
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -112,6 +131,8 @@ body {
   color: var(--brand-color-white);
 }
 .text-button {
+  margin: 30px 680px;
+  padding: 10px 42px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -120,6 +141,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
   background: var(--brand-color-blue);
   color: var(--brand-color-white);
   border: var(--brand-color-blue);
