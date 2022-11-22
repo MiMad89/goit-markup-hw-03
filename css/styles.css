@@ -84,7 +84,7 @@ display: flex;
 .menu-item:hover {
   color: var(--brand-color-blue);
 }
-.contact-header{
+.contact-header > a{
   display: flex;
   align-items: center;
   justify-content: space-between;
