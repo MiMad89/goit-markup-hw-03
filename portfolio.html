@@ -25,26 +25,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-    <header class="box-bg">
-      <a class="logo-header" href="./index.html">Web<span class="warning-box">Studio</span></a>
+   <header class="container">
       <nav class="menu">
-        <ul class="list menu-list">
-          <li><a class="menu-item" href="./index.html">Agencja</a></li>
-          <li>
-            <a class="menu-item menu-first" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="menu-item" href="#">Kontakt</a></li>
-        </ul>
+        <div class="logo">
+          <a class="logo-header" href="./index.html">Web<span class="warning-box">Studio</span></a>
+        </div>
+        <div class="list">
+          <ul class="menu-list">
+            <li>
+              <a class="menu-item" href="./index.html">Agencja</a>
+            </li>
+            <li>
+              <a class="menu-item" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="menu-item" href="#">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-header">
+          <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="tel" href="tel:48111111111">+48 111 111 111</a>
+        </div>
       </nav>
-      <a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="tel" href="tel:48111111111">+48 111 111 111</a>
     </header>
     <main>
       <!--Sekcja Filtr-->
       <section class="buttons">
         <div>
-          <ul class="list buttons-list">
+          <ul class="buttons-list">
             <li>
               <button class="buttons-text buttons-first" type="button">Wszystkie</button>
             </li>
@@ -67,7 +75,7 @@
       <!--Portfolio-->
       <section>
         <div>
-          <ul class="list portfolio-list">
+          <ul class="portfolio-list">
             <li>
               <img src="images/portfolio/portfolio1.jpg" alt="laptop" width="390" height="274" />
               <h3 class="portfolio-mane">Technocrack</h3>
@@ -141,7 +149,7 @@
     <footer class="footer-bg">
       <a class="logo-footer" href="index.html">Web<span class="warning">Studio</span></a>
       <address class="contact-list">
-        <ul class="list contact-list">
+        <ul class="contact-list">
           <li class="contact-item">
             <a
               class="contact-link contact-first"
