@@ -9,7 +9,7 @@ body {
   --brand-color-grey: #757575;
   --brand-background-black: black;
   --brand-background-blue: #2196f3;
-  --brand-background-graphite: #2F303A;
+  --brand-background-graphite: #2f303a;
 }
 /* STYLES GLOBAL */
 
@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: auto;
   background-color: var(--brand-color-white);
@@ -38,11 +38,15 @@ body {
 }
 
 /* END STYLES GLOBAL */
+
+/* Header */
+
 .menu {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
+  flex-wrap: wrap;
   height: 80px;
-  padding-left: 215px;
   border-bottom: 1px solid #ececec;
 }
 .logo-header {
@@ -57,11 +61,12 @@ body {
   border: none;
 }
 .list {
-  width: 625px;
+  width: 718px;
   padding: 0 46px;
 }
 .menu-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .menu-item {
   margin-left: 46px;
@@ -98,13 +103,14 @@ body {
 .tel:hover {
   color: var(--brand-color-blue);
 }
+
 /* Sekcja przycisk */
+
 .bg {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: normal;
   flex-wrap: wrap;
   height: 600px;
   padding: 94px;
@@ -137,6 +143,7 @@ body {
   color: var(--brand-color-white);
   border: var(--brand-color-blue);
 }
+
 /* Atuty */
 
 .column {
@@ -146,7 +153,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: normal;
   flex-wrap: wrap;
 }
 .column-item:nth-last-child(-n + 3) {
@@ -170,6 +176,7 @@ body {
 
   color: var(--brand-color-black);
 }
+
 /* Czym się zajmujemy */
 
 .job {
@@ -179,13 +186,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: normal;
   flex-wrap: wrap;
 }
 .job-item:nth-last-child(-n + 2) {
   margin-left: 30px;
 }
-
 
 /* Nasz zespół */
 
@@ -199,14 +204,13 @@ body {
   color: var(--brand-color-black);
 }
 .team {
-  padding: 94px;
+  padding: 94px 0;
   background: #f5f4fa;
 }
 .team-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: normal;
   flex-wrap: wrap;
 }
 .team-mane {
@@ -237,24 +241,29 @@ body {
 .team-item:nth-last-child(-n + 3) {
   margin-left: 30px;
 }
-.details{
-display: flex;
+.details {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: normal;
   flex-wrap: wrap;
   height: 108px;
 }
-.team-mane{
+.team-mane {
   padding-bottom: 10px;
 }
 
 /* Stopka */
 
 .footer-bg {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  mix-blend-mode: normal;
+  flex-wrap: wrap;
   padding: 60px 0;
-  padding-left: 215px;
+  /* padding-left: 215px; */
   background: var(--brand-background-graphite);
 }
 .logo-footer {
@@ -288,6 +297,8 @@ display: flex;
 
 /* PORTFOLIO */
 
+/* Header */
+
 .buttons .buttons-list {
   display: flex;
   align-items: center;
@@ -315,7 +326,6 @@ display: flex;
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
   border-radius: 4px;
 }
 .mail-link {
@@ -331,12 +341,19 @@ display: flex;
 .mail-link:hover {
   color: var(--brand-color-blue);
 }
+
+/* Portfolio */
+
+.portfolio{
+  padding-bottom: 94px;
+}
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
   background: var(--brand-color-white);
   text-align: left;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  /* border-radius: 0px 0px 4px 4px; */
 }
 .portfolio-mane {
   font-weight: 700;
@@ -350,4 +367,15 @@ display: flex;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--brand-color-grey);
+}
+.portfolio-image{
+  display: block;
+}
+.portfolio-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 110px;
+  border: 1px solid #EEEEEE;
 }
