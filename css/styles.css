@@ -41,17 +41,14 @@ body {
 
 /* Header */
 
-.header{
-  width: 1600px;
-  margin: auto;
-  border-bottom: 1px solid #ececec;
-}
 .menu {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  height: 80px;
   border-bottom: 1px solid #ececec;
+}
+.logo {
+  padding: 25px 0;
 }
 .logo-header {
   color: var(--brand-color-blue);
@@ -109,9 +106,8 @@ body {
 
 /* Sekcja przycisk */
 
-.dark-bg{
-  width: 1600px;;
-  margin: auto;
+.dark-bg {
+  padding: 94px 0;
   background-color: var(--brand-background-graphite);
 }
 .bg {
@@ -120,12 +116,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 600px;
-  padding: 94px;
+  padding: 106px 15px;
   background: var(--brand-background-graphite);
 }
 .text-bg {
   max-width: 696px;
+  /* padding: 0 247px; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -160,11 +156,8 @@ body {
 .column-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
-.column-item:nth-last-child(-n + 3) {
-  margin-left: 30px;
 }
 .column-item {
   width: 270px;
@@ -192,19 +185,14 @@ body {
 .job-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
-.job-item:nth-last-child(-n + 2) {
-  margin-left: 30px;
 }
 
 /* Nasz zespół */
 
-.color-team{
-  width: 1600px;;
-  margin: auto;
-  background-color: #F5F4FA;
+.color-team {
+  background-color: #f5f4fa;
 }
 .section-mane {
   padding-bottom: 50px;
@@ -242,23 +230,19 @@ body {
   color: var(--brand-color-grey);
 }
 .team-item {
-  height: 368px;
   text-align: center;
   background: var(--brand-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/* .team-item:nth-last-child(-n + 3) {
-  margin-left: 30px;
-} */
 .details {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 108px;
+  padding: 30px 0;
 }
 .team-mane {
   padding-bottom: 10px;
@@ -266,13 +250,16 @@ body {
 
 /* Stopka */
 
+.dark-footer {
+  background-color: var(--brand-background-graphite);
+}
 .footer-bg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   mix-blend-mode: normal;
   flex-wrap: wrap;
-  padding: 60px 0;
+  padding: 60px 15px;
   background: var(--brand-background-graphite);
 }
 .logo-footer {
@@ -384,6 +371,6 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  height: 110px;
+  padding: 20px 0;
   border: 1px solid #eeeeee;
 }
