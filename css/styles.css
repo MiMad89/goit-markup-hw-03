@@ -44,7 +44,6 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-wrap: wrap;
   height: 80px;
   border-bottom: 1px solid #ececec;
@@ -77,7 +76,6 @@ body {
   text-decoration: none;
   color: var(--brand-color-black);
 }
-
 .menu-item:hover {
   color: var(--brand-color-blue);
 }
@@ -112,6 +110,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 1600px;
   height: 600px;
   padding: 94px;
   background: var(--brand-background-graphite);
@@ -173,7 +172,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--brand-color-black);
 }
 
@@ -233,7 +231,6 @@ body {
   height: 368px;
   text-align: center;
   background: var(--brand-color-white);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -258,12 +255,10 @@ body {
 .footer-bg {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   mix-blend-mode: normal;
   flex-wrap: wrap;
   padding: 60px 0;
-  /* padding-left: 215px; */
   background: var(--brand-background-graphite);
 }
 .logo-footer {
@@ -303,7 +298,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: normal;
   flex-wrap: wrap;
   margin: 94px 0 50px;
 }
@@ -344,7 +338,7 @@ body {
 
 /* Portfolio */
 
-.portfolio{
+.portfolio {
   padding-bottom: 94px;
 }
 .portfolio-list {
@@ -368,7 +362,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-color-grey);
 }
-.portfolio-image{
+.portfolio-image {
   display: block;
 }
 .portfolio-title {
@@ -377,5 +371,5 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   height: 110px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
