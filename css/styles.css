@@ -41,14 +41,18 @@ body {
 
 /* Header */
 
-.header-line{
+.header-line {
   border-bottom: 1px solid #ececec;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
 }
 .menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 .logo {
   padding: 25px 0;
@@ -65,8 +69,7 @@ body {
   border: none;
 }
 .list {
-  width: 718px;
-  padding: 0 46px;
+  padding-left: 46px;
 }
 .menu-list {
   display: flex;
@@ -140,7 +143,7 @@ body {
   color: var(--brand-color-white);
   border: var(--brand-color-blue);
 }
-.bg-button{
+.bg-button {
   display: flex;
   justify-content: center;
 }
