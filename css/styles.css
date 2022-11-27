@@ -77,6 +77,8 @@ body {
 }
 .menu-item {
   margin-left: 46px;
+}
+.menu-mane {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -84,21 +86,8 @@ body {
   text-decoration: none;
   color: var(--brand-color-black);
 }
-.menu-item:hover {
-  color: var(--brand-color-blue);
-}
-.mail {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--brand-color-grey);
-}
-.mail:hover {
-  color: var(--brand-color-blue);
-}
+.mail,
 .tel {
-  margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,18 +95,24 @@ body {
   text-decoration: none;
   color: var(--brand-color-grey);
 }
+.contact-link:hover,
+.menu-mane:hover,
+.mail:hover,
 .tel:hover {
   color: var(--brand-color-blue);
+}
+.tel {
+  margin-left: 50px;
 }
 
 /* Sekcja przycisk */
 
-.dark-bg {
+.dark-bg,
+.bg {
   background-color: var(--brand-background-graphite);
 }
 .bg {
   padding: 200px 0;
-  background: var(--brand-background-graphite);
 }
 .text-bg {
   padding-bottom: 30px;
@@ -189,7 +184,8 @@ body {
 
 /* Nasz zespół */
 
-.color-team {
+.color-team,
+.team {
   background-color: #f5f4fa;
 }
 .section-mane {
@@ -203,7 +199,6 @@ body {
 }
 .team {
   padding: 94px 0;
-  background: #f5f4fa;
 }
 .team-list {
   display: flex;
@@ -248,12 +243,12 @@ body {
 
 /* Stopka */
 
-.dark-footer {
+.dark-footer,
+.footer-bg {
   background-color: var(--brand-background-graphite);
 }
 .footer-bg {
   padding: 60px 0px;
-  background: var(--brand-background-graphite);
 }
 .logo-footer {
   color: var(--brand-color-blue);
@@ -273,9 +268,6 @@ body {
 }
 .contact-item:nth-last-child(-n + 2) {
   margin-top: 9px;
-}
-.contact-link:hover {
-  color: var(--brand-color-blue);
 }
 .contact-first {
   color: var(--brand-color-white);
@@ -316,7 +308,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.mail-link {
+/* .mail-link {
   margin-top: 32px;
   margin-left: 371px;
   font-weight: 500;
@@ -325,10 +317,10 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-color-grey);
-}
-.mail-link:hover {
+} */
+/* .mail-link:hover {
   color: var(--brand-color-blue);
-}
+} */
 
 /* Portfolio */
 
@@ -364,6 +356,6 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
