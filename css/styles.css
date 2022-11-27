@@ -41,11 +41,14 @@ body {
 
 /* Header */
 
+.header-line{
+  border-bottom: 1px solid #ececec;
+}
 .menu {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid #ececec;
+  
 }
 .logo {
   padding: 25px 0;
@@ -107,21 +110,14 @@ body {
 /* Sekcja przycisk */
 
 .dark-bg {
-  padding: 94px 0;
   background-color: var(--brand-background-graphite);
 }
 .bg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 106px 15px;
+  padding: 200px 0;
   background: var(--brand-background-graphite);
 }
 .text-bg {
-  max-width: 696px;
-  /* padding: 0 247px; */
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -131,14 +127,11 @@ body {
   color: var(--brand-color-white);
 }
 .text-button {
-  margin-top: 30px;
   padding: 10px 42px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-decoration: none;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -146,6 +139,10 @@ body {
   background: var(--brand-color-blue);
   color: var(--brand-color-white);
   border: var(--brand-color-blue);
+}
+.bg-button{
+  display: flex;
+  justify-content: center;
 }
 
 /* Atuty */
@@ -179,14 +176,12 @@ body {
 
 /* Czym się zajmujemy */
 
-.job {
-  padding-bottom: 94px;
-}
 .job-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 
 /* Nasz zespół */
@@ -254,12 +249,7 @@ body {
   background-color: var(--brand-background-graphite);
 }
 .footer-bg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  mix-blend-mode: normal;
-  flex-wrap: wrap;
-  padding: 60px 15px;
+  padding: 60px 0px;
   background: var(--brand-background-graphite);
 }
 .logo-footer {
@@ -293,7 +283,7 @@ body {
 
 /* PORTFOLIO */
 
-/* Header */
+/* Sekcja Filtra */
 
 .buttons .buttons-list {
   display: flex;
