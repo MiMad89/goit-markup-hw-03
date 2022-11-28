@@ -22,7 +22,7 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: auto;
-  background-color: var(--brand-color-white);
+  /* background-color: var(--brand-color-white); */
 }
 * {
   margin: 0;
@@ -107,7 +107,6 @@ body {
 
 /* Sekcja przycisk */
 
-.dark-bg,
 .bg {
   background-color: var(--brand-background-graphite);
 }
@@ -184,10 +183,6 @@ body {
 
 /* Nasz zespół */
 
-.color-team,
-.team {
-  background-color: #f5f4fa;
-}
 .section-mane {
   padding-bottom: 50px;
   font-weight: 700;
@@ -198,6 +193,7 @@ body {
   color: var(--brand-color-black);
 }
 .team {
+  background-color: #F5F4FA;
   padding: 94px 0;
 }
 .team-list {
@@ -243,7 +239,6 @@ body {
 
 /* Stopka */
 
-.dark-footer,
 .footer-bg {
   background-color: var(--brand-background-graphite);
 }
